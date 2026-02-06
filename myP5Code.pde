@@ -27,6 +27,11 @@ drawAnt(458+antmove,320);
 antmove--
 butterflymove++
 butterflymovee--
+
+if(mousePressed){ 
+  drawFlower(random(0,600),random(0,600));
+}
+
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
@@ -72,4 +77,11 @@ var drawAnt= function(AntX, AntY){
   textSize(50);
  
   text("🐜", AntX, AntY);
+};
+
+//🟡drawFlower Function - will run when called
+var drawFlower= function(FlowerX, FlowerY){
+  textSize(50);
+ 
+  text("🌼", FlowerX, FlowerY);
 };
